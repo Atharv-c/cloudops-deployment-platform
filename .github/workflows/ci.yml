@@ -31,3 +31,6 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t cloudops-deployment-platform .
+
+      - name: Validate Docker Compose
+        run: docker compose config
