@@ -13,7 +13,7 @@ def health():
 
 @app.get("/version")
 def version():
-    return {"version": "1.0.0"}
+    return {"version": "1.0.1"}
 
 @app.get("/api/status")
 def api_status():
