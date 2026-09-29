@@ -30,7 +30,7 @@ jobs:
         run: pytest
 
       - name: Build Docker image
-        run: docker build -t cloudops-deployment-platform .
+  run: docker build -t cloudops-deployment-platform:1.0.1 .
 
       - name: Validate Docker Compose
         run: docker compose config
